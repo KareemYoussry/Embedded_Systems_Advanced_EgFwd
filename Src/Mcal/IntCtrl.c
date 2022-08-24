@@ -18,10 +18,10 @@
 
 /**********************************************************************************************************************
 *  LOCAL MACROS CONSTANT\FUNCTION
-*********************************************************************************************************************/	
+*********************************************************************************************************************/
 
 /**********************************************************************************************************************
- *  LOCAL DATA 
+ *  LOCAL DATA
  *********************************************************************************************************************/
 
 /**********************************************************************************************************************
@@ -42,29 +42,26 @@
 
 
 /******************************************************************************
-* \Syntax          : void IntCrtl_Init(void)                                      
-* \Description     : initialize Nvic\SCB Module by parsing the Configuration 
-*                    into Nvic\SCB registers                                    
-*                                                                             
-* \Sync\Async      : Synchronous                                               
-* \Reentrancy      : Non Reentrant                                             
-* \Parameters (in) : None                     
-* \Parameters (out): None                                                      
+* \Syntax          : void IntCrtl_Init(void)
+* \Description     : initialize Nvic\SCB Module by parsing the Configuration
+*                    into Nvic\SCB registers
+*
+* \Sync\Async      : Synchronous
+* \Reentrancy      : Non Reentrant
+* \Parameters (in) : None
+* \Parameters (out): None
 * \Return value:   : None
 *******************************************************************************/
+
 void IntCrtl_Init(void)
 {
-
 	/*TODO Configure Grouping\SubGrouping System in APINT register in SCB*/
-    APINT = 0xFA05|0x00001234;
-    
-    /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/  
+    APINT = 0xFA05|;
+
+    /*TODO : Assign Group\Subgroup priority in NVIC_PRIx Nvic and SCB_SYSPRIx Registers*/
 
 
 	/*TODO : Enable\Disable based on user configurations in NVIC_ENx and SCB_Sys Registers */
-
-
-	
 
 }
 

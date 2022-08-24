@@ -5,8 +5,8 @@
  *         File:  IntCtrl_Types.h
  *       Module:  -
  *
- *  Description:  <Write File DESCRIPTION here>     
- *  
+ *  Description:  <Write File DESCRIPTION here>
+ *
  *********************************************************************************************************************/
 #ifndef INTCTRL_TYPES_H
 #define INTCTRL_TYPES_H
@@ -31,12 +31,19 @@
  *********************************************************************************************************************/
 typedef enum
 {
-
-
-
+    Reset = 1,
+    NMI,
+    Hard_Fault,
+    Memory_Management,
+    Bus_Fault,
+    Usage_Fault,
+    SVCall = 11,
+    Debug_Monitor,
+    PendSV = 14,
+    SysTick,
 }IntCtrl_InterruptType;
 
- 
+
 #endif  /* INTCTRL_TYPES_H */
 
 /**********************************************************************************************************************
